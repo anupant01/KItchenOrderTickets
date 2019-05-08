@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import com.e.kitchenordertickets.R;
 
@@ -18,6 +19,7 @@ public class RegisterFragment extends Fragment {
 
     private Button btnRegister;
     private EditText etPass,etUname;
+    private Spinner spinner;
 
 
     public RegisterFragment() {
@@ -34,6 +36,7 @@ public class RegisterFragment extends Fragment {
         btnRegister =view.findViewById(R.id.btnRegister);
         etUname = view.findViewById(R.id.etUname);
         etPass =view.findViewById(R.id.etPass);
+        spinner=view.findViewById(R.id.spinner);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +48,8 @@ public class RegisterFragment extends Fragment {
 
 
         return view;
+
+
     }
 
 }
